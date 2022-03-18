@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block page_title %} Story {% endblock %}
+
+{% block page_content %}
+    <nav>
+        <a href="/">Try again</a>
+    </nav>
+    <hr>
+    <h1>Here is your wacky story!</h1>
+    {% block reply %}
+        <p>{{ reply }}</p>
+    {% endblock %}
+{% endblock %}

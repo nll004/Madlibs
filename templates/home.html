@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block page_title %} Home {% endblock %}
+
+{% block page_content %}
+    <h1>Welcome to Madlibs!</h1>
+    <p>Provide answers for the following questions then click submit to see your results.</p>
+
+    <form action="/story">
+        <h2>Mad Lib Selection Form</h2>
+        {% for answer in questions %}
+            <label for="{{ answer }}">Enter {{ answer }}</label>
+            <input type="text" name="{{answer}}" placeholder="Type {{answer}}" required>
+        {% endfor %}
+
+        <button>Submit</button>
+    </form>
+{% endblock %}

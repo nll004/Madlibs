@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    position: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font: 4rem Georgia, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    font: 2rem Georgia, sans-serif;
+}
+
+p {
+    text-align: center;
+    margin: 30px;
+    font: 1.5rem bold Arial, sans-serif;
+}
+
+form {
+    position: relative;
+    left: 23%;
+    background-color: rgb(187, 211, 255);
+    border: 1px solid grey;
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+
+}
+
+form > label {
+    font: 20px Arial, sans-serif;
+}
+
+input {
+    display: inline-block;
+    width: 90%;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: azure;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: rgb(57, 57, 150);
+    color: azure;
+}
